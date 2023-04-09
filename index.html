@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loader</title>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 1000px;
+            height: 500px;
+            background-color: black;
+            margin: 50px auto;
+            gap: 50px;
+            border-radius: 100px;
+        }
+
+        .container h2{
+            color: white;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 40px;
+            letter-spacing: 5px;
+            font-weight: 700;
+        }
+
+        .load-cont{
+            display: flex;
+            gap: 30px;
+        }
+
+        .same {
+            border: 16px solid #f3f3f3;
+            border-radius: 50%;
+            border-top: 16px solid #3498db;
+            width: 130px;
+            height: 130px;
+            animation: spin 2s linear infinite;
+        }
+
+        .loader2{
+            border-top: 16px solid blue;
+            border-bottom: 16px solid blue;
+        }
+
+
+        .loader3 {
+            border-top: 16px solid blue;
+            border-right: 16px solid green;
+            border-bottom: 16px solid red;
+        }
+
+        .loader4 {
+            border-top: 16px solid blue;
+            border-right: 16px solid green;
+            border-bottom: 16px solid red;
+            border-left: 16px solid pink;
+        }
+
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Loader using HTML and CSS</h2>
+        <div class="load-cont">
+            <div class="loader1 same"></div>
+            <div class="loader2 same"></div>
+            <div class="loader3 same"></div>
+            <div class="loader4 same"></div>
+        </div>
+    </div>
+</body>
+</html>
